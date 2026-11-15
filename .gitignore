@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Runtime-generated data — not source code
+chroma_db/
+memory_store.json
+findings.md
+tool_log.jsonl
+pretooluse_debug.jsonl
+
+# Never commit secrets
+.env

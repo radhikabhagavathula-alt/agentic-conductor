@@ -36,11 +36,12 @@ async def main():
         permission_mode="dontAsk",
         mcp_servers={"memory-tools": memory_server},
         hooks=safety_hooks,
+	setting_sources=["project"], 
         max_turns=8,
     )
 
     async with ClaudeSDKClient(options=options) as client:
-        await client.query("Topic: the Great Wall of China")
+        await client.query("Topic: Taj Mahal")
         async for message in client.receive_response():
             print(message)
 
